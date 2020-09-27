@@ -7,8 +7,8 @@ import webbrowser
 class HAITWIFI:
 
     def __init__(self):
-        self.username = '2007441403'
-        self.password = '1998925sk'
+        self.username = '学号'
+        self.password = '密码'
         # 移动@gxyyd  联通@gxylt  电信@gxydx
         self.operator = {'1': '@gxyyd', '2': '@gxylt', '3': '@gxydx'}.get('1', '@gxyyd')
 
@@ -84,7 +84,7 @@ class HAITWIFI:
         else:
             toaster.show_toast('WIFI登录', '登录失败', threaded=True)
             webbrowser.open(
-                'http://211.69.15.33:9999/portalReceiveAction.do?wlanuserip=10.50.57.125&wlanacname=HAIT-SR8808')
+                'http://211.69.15.33:9999/portalReceiveAction.do?wlanuserip='+ip[0]+'&wlanacname=HAIT-SR8808')
 
 
 HAITlogin = HAITWIFI()

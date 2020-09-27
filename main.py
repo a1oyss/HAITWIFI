@@ -80,9 +80,9 @@ class HAITWIFI:
         bs = BeautifulSoup(r.content, 'html5lib')
         toaster = ToastNotifier()
         if bs.find_all('input', id='loginOut') != []:
-            toaster.show_toast('WIFI登录', '登录成功', icon_path='py.ico', duration=2, threaded=True)
+            toaster.show_toast('WIFI登录', '登录成功', icon_path='D:\\Program Files\\Python37\\DLLs\\py.ico', duration=2, threaded=True)
         else:
-            toaster.show_toast('WIFI登录', '登录失败', icon_path='py.ico', duration=2, threaded=True)
+            toaster.show_toast('WIFI登录', '登录失败', icon_path='D:\\Program Files\\Python37\\DLLs\\py.ico', duration=2, threaded=True)
             webbrowser.open(
                 'http://211.69.15.33:9999/portalReceiveAction.do?wlanuserip=' + ip[0] + '&wlanacname=HAIT-SR8808')
 

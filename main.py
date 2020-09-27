@@ -7,8 +7,8 @@ import webbrowser
 class HAITWIFI:
 
     def __init__(self):
-        self.username = '2007441403'
-        self.password = '1998925sk'
+        self.username = '学号'
+        self.password = '密码'
         # 移动@gxyyd  联通@gxylt  电信@gxydx
         self.operator = {'1': '@gxyyd', '2': '@gxylt', '3': '@gxydx'}.get('1', '@gxyyd')
 
